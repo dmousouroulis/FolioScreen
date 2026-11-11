@@ -237,6 +237,7 @@ Power BI); Part A tests it in the Service.
 
 ```bash
 git config core.hooksPath tools/git-hooks     # once per clone: runs the privacy scan before each commit
+chmod +x tools/git-hooks/pre-commit           # macOS/Linux: a file uploaded through the browser loses this bit
 ```
 
 The hook blocks a commit if the scan finds a credential value from your Keychain, a pseudonymised account label,

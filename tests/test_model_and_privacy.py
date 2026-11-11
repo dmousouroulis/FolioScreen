@@ -132,3 +132,12 @@ def test_privacy_scan_blocks_every_state_file_and_stray_images(tmp_path):
     found = {rel for rel, _ in scan(tmp_path)}
     assert set(names) | {"Screenshot 2026-11-11.png"} <= found
     assert "docs/images/overview.png" not in found
+
+
+def test_privacy_scan_ignores_npm_lockfile_checksums(tmp_path):
+    """npm's package-lock.json is full of integrity hashes that look like tokens; it is generated, never committed."""
+    from folio.privacy_scan import scan
+    (tmp_path / "tools" / "node").mkdir(parents=True)
+    (tmp_path / "tools" / "node" / "package-lock.json").write_text(
+        '{"integrity": "sha512-' + "A" * 80 + '"}', encoding="utf-8")
+    assert scan(tmp_path) == []

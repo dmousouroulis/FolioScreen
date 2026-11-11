@@ -4,7 +4,9 @@ Issues and pull requests are welcome.
 
 - **Never include real portfolio data** in an issue, screenshot, test or fixture. Use the demo (`--demo`) or the
   SnapTrade Sandbox, whose data is simulated.
-- Enable the privacy check once per clone: `git config core.hooksPath tools/git-hooks`.
+- Enable the privacy check once per clone:
+  `git config core.hooksPath tools/git-hooks && chmod +x tools/git-hooks/pre-commit`
+  (on Windows, Git for Windows runs the hook without `chmod`).
 - Run the checks before opening a pull request (CI runs the same ones):
 
 ```bash

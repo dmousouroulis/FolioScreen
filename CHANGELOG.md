@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.2
+
+- CI: the workflow sets FolioScreen's state folder in a step (the `runner` context is not available in a job's
+  `env`), uses the current (Node 24) versions of GitHub's actions and Node.js 24, and no longer creates `package-lock.json`.
+- Privacy scan: skips `tools/node/package-lock.json` (npm's package checksums, which look like tokens).
+- CONTRIBUTING: enabling the pre-commit hook also restores its executable bit.
+
 ## 0.7.1 — first public preview
 
 - **Report:** Overview, Holdings, Performance and Security detail pages, with separately designed iPhone layouts.

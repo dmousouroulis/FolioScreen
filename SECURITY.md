@@ -15,7 +15,7 @@ is built, and a sync refuses to publish if a raw identifier remains. FolioScreen
 connections and refuses to sync a connection with trading access.
 
 The repository contains code, a fictional demo portfolio and documentation only. A privacy scan runs in CI and,
-once enabled, before every commit (`git config core.hooksPath tools/git-hooks`).
+once enabled, before every commit (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 ## Reporting a vulnerability
 
