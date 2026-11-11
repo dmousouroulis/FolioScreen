@@ -1,0 +1,41 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      FOLIO_HOME: ${{ runner.temp }}/folio-home
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install
+        shell: bash
+        run: |
+          pip install -r requirements-dev.txt
+          cd tools/node && npm install --no-audit --no-fund
+      - name: Tests (offline)
+        run: python -m pytest -q
+      - name: Build the demo report and model
+        run: python -m folio build --out pbip
+      - name: Validate report files, Power Query and model references
+        run: python tools/validate_pbip.py pbip FolioScreen
+      - name: Check DAX references
+        run: python tools/check_dax_refs.py pbip/FolioScreen.SemanticModel
+      - name: Privacy scan
+        run: python -m folio privacy-scan
