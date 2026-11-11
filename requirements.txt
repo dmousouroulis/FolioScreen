@@ -1,0 +1,5 @@
+snaptrade-python-sdk>=13.1.5,<14
+azure-identity>=1.27,<2
+requests>=2.31,<3
+keyring>=25,<26
+tzdata>=2024.1; sys_platform == "win32"

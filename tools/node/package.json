@@ -1,0 +1,8 @@
+{
+  "name": "folioscreen-validation-tools",
+  "private": true,
+  "description": "Microsoft's Power Query parser, used by tools/validate_pbip.py",
+  "dependencies": {
+    "@microsoft/powerquery-parser": "5.0.0"
+  }
+}

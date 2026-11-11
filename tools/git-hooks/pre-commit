@@ -1,0 +1,12 @@
+#!/bin/sh
+# FolioScreen: block a commit if the privacy scan finds credentials, account labels, private state files or stray images.
+# Enable once per clone: git config core.hooksPath tools/git-hooks   (works on macOS and in Git for Windows)
+PY=""
+for c in "$VIRTUAL_ENV/bin/python" "$VIRTUAL_ENV/Scripts/python.exe" ".venv/bin/python" ".venv/Scripts/python.exe"; do
+  [ -n "$c" ] && [ -x "$c" ] && PY="$c" && break
+done
+[ -n "$PY" ] || PY="$(command -v python3 || command -v python)"
+if ! "$PY" -m folio privacy-scan; then
+  echo "Commit blocked by the FolioScreen privacy scan. Remove the findings above, then commit again." >&2
+  exit 1
+fi

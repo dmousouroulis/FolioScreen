@@ -1,0 +1,1975 @@
+{
+ "connections": [
+  {
+   "id": "X1cf4bf9b",
+   "created_date": "2026-11-10T17:11:01.011032Z",
+   "updated_date": "2026-11-10T17:11:02.110651Z",
+   "brokerage": {
+    "allows_cryptocurrency_and_regular_securities": true,
+    "authorization_types": [
+     {
+      "type": "read",
+      "auth_type": "UNOFFICIAL_API"
+     },
+     {
+      "type": "trade",
+      "auth_type": "UNOFFICIAL_API"
+     }
+    ],
+    "maintenance_windows": [],
+    "brokerage_type": {
+     "id": "X2d267a08",
+     "name": "X6e2cf3d5"
+    },
+    "id": "X55562966",
+    "name": "sandbox",
+    "description": "Used for testing developer applications without friction",
+    "slug": "SANDBOX",
+    "url": "https://snaptrade.com",
+    "maintenance_mode": false,
+    "allows_fractional_units": true,
+    "allows_trading": true,
+    "has_reporting": true,
+    "is_real_time_connection": true,
+    "aws_s3_logo_url": "https://passiv-brokerage-logos.s3.ca-central-1.amazonaws.com/snaptrade-logo-square.png",
+    "aws_s3_square_logo_url": "https://passiv-brokerage-logos.s3.ca-central-1.amazonaws.com/snaptrade-logo-square.png",
+    "open_url": "https://snaptrade.com",
+    "display_name": "Xacc9eb29",
+    "enabled": true,
+    "allows_cryptocurrency_symbols": true,
+    "release_stage": "DEVELOPMENT",
+    "exchanges": [
+     "Xexchange1"
+    ],
+    "is_degraded": false
+   },
+   "name": "X148c227b",
+   "type": "read",
+   "disabled": false,
+   "disabled_date": null,
+   "meta": {
+    "trigger": "",
+    "scenario": "self-directed",
+    "identifier": "sandbox-self-directed"
+   },
+   "is_eligible_for_payout": false,
+   "data_freshness_mode": {
+    "institution": "realtime",
+    "snaptrade": "realtime"
+   }
+  }
+ ],
+ "accounts": [
+  {
+   "account": {
+    "kind": "investment",
+    "id": "Xdbc41c2d",
+    "connection_id": "X1cf4bf9b",
+    "display_name": "Xc1cd4195",
+    "status": "open",
+    "masked_account_number": "Xdc1a0f00",
+    "institution_account_id": "X4d60a9ee",
+    "institution_id": "X55562966",
+    "sync_status": {
+     "transactions": {
+      "last_successful_sync": "2026-11-09",
+      "first_transaction_date": "2026-10-11",
+      "initial_sync_completed": true
+     },
+     "orders": "2026-11-10T17:11:02.417307+00:00",
+     "positions": "2026-11-10T17:11:02.417307+00:00",
+     "balances": "2026-11-10T17:11:02.417307+00:00"
+    },
+    "raw_type": "IRA",
+    "cash_or_margin": "unknown",
+    "is_paper": true,
+    "net_value": {
+     "amount": 36774.60064,
+     "currency": "USD"
+    }
+   },
+   "balances": [
+    {
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "cash": 12500.0,
+     "buying_power": 12500.0
+    }
+   ],
+   "positions": {
+    "results": [
+     {
+      "instrument": {
+       "kind": "stock",
+       "id": "Xa56be22c",
+       "symbol": "NVDA",
+       "raw_symbol": "NVDA",
+       "description": "NVIDIA Corporation",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG000BBK0R0",
+        "figi_share_class": "BBG001S5TZJ6"
+       }
+      },
+      "units": "12",
+      "price": "120",
+      "cost_basis": "115",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "stock",
+       "id": "X575e789c",
+       "symbol": "GOOGL",
+       "raw_symbol": "GOOGL",
+       "description": "Alphabet Inc. Class A Common Stock",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG009S4MT03",
+        "figi_share_class": "BBG009S39JY5"
+       }
+      },
+      "units": "3",
+      "price": "170",
+      "cost_basis": "165",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "mutualfund",
+       "id": "X8254617e",
+       "symbol": "FXAIX",
+       "raw_symbol": "FXAIX",
+       "description": "Fidelity 500 Index Fund",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG001P8F023",
+        "figi_share_class": "BBG001TX1Z13"
+       }
+      },
+      "units": "120.5432",
+      "price": "185.2",
+      "cost_basis": "178",
+      "currency": "USD",
+      "cash_equivalent": false
+     },
+     {
+      "instrument": {
+       "kind": "mutualfund",
+       "id": "Xafa52c0f",
+       "symbol": "SPAXX",
+       "raw_symbol": "SPAXX",
+       "description": "Fidelity Hereford Street Trust - Fidelity Government Money Market Fund",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG000B9Y9C7",
+        "figi_share_class": "BBG001S5P6W9"
+       }
+      },
+      "units": "3500",
+      "price": "1",
+      "cost_basis": "1",
+      "currency": "USD",
+      "cash_equivalent": true
+     }
+    ],
+    "data_freshness": {
+     "as_of": "2026-11-10T17:20:09Z"
+    }
+   },
+   "activities": [
+    {
+     "id": "X52007953",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "WITHDRAWAL",
+     "description": "ACH withdrawal",
+     "amount": -500.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X44640111",
+     "settlement_date": null,
+     "trade_date": "2026-11-07T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xf61a7604",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "TRANSFER",
+     "description": "Cash transfer",
+     "amount": 1000.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X1ea2bbd6",
+     "settlement_date": null,
+     "trade_date": "2026-11-04T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X25eb6dfd",
+     "symbol": {
+      "description": "NVIDIA Corporation",
+      "id": "Xa56be22c",
+      "symbol": "NVDA",
+      "raw_symbol": "NVDA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BBK0R0",
+      "figi_instrument": {
+       "figi_code": "BBG000BBK0R0",
+       "figi_share_class": "BBG001S5TZJ6"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 20 NVDA @ 120.00",
+     "amount": -2400.0,
+     "price": 120.0,
+     "units": 20.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X377721c8",
+     "settlement_date": "2026-11-04T17:11:02.054255Z",
+     "trade_date": "2026-11-03T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X97a959b3",
+     "symbol": {
+      "description": "NVIDIA Corporation",
+      "id": "Xa56be22c",
+      "symbol": "NVDA",
+      "raw_symbol": "NVDA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BBK0R0",
+      "figi_instrument": {
+       "figi_code": "BBG000BBK0R0",
+       "figi_share_class": "BBG001S5TZJ6"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "EXTERNAL_ASSET_TRANSFER_OUT",
+     "description": "Transfer out 2 NVDA",
+     "amount": -240.0,
+     "price": 120.0,
+     "units": -2.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X6a2a9fc4",
+     "settlement_date": null,
+     "trade_date": "2026-11-02T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X13dec652",
+     "symbol": {
+      "description": "Fidelity 500 Index Fund",
+      "id": "X8254617e",
+      "symbol": "FXAIX",
+      "raw_symbol": "FXAIX",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/fidelity.com",
+      "type": {
+       "id": "Xf33cfd2c",
+       "code": "oef",
+       "description": "Open Ended Fund",
+       "is_supported": false
+      },
+      "figi_code": "BBG001P8F023",
+      "figi_instrument": {
+       "figi_code": "BBG001P8F023",
+       "figi_share_class": "BBG001TX1Z13"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "DIVIDEND",
+     "description": "FXAIX dividend",
+     "amount": 62.31,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xef6b4891",
+     "settlement_date": null,
+     "trade_date": "2026-10-29T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xf04e1557",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "INTEREST",
+     "description": "Cash interest",
+     "amount": 3.14,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xc9cdc99e",
+     "settlement_date": null,
+     "trade_date": "2026-10-21T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xc1c5b16a",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "DISTRIBUTION",
+     "description": "Fund distribution",
+     "amount": 15.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X3d951a9a",
+     "settlement_date": null,
+     "trade_date": "2026-10-20T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xa2b570c4",
+     "symbol": {
+      "description": "Alphabet Inc. Class A Common Stock",
+      "id": "X575e789c",
+      "symbol": "GOOGL",
+      "raw_symbol": "GOOGL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/abc.xyz",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG009S4MT03",
+      "figi_instrument": {
+       "figi_code": "BBG009S4MT03",
+       "figi_share_class": "BBG009S39JY5"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "EXTERNAL_ASSET_TRANSFER_IN",
+     "description": "Transfer in 3 GOOGL",
+     "amount": 510.0,
+     "price": 170.0,
+     "units": 3.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X281e31f1",
+     "settlement_date": null,
+     "trade_date": "2026-10-19T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X8af01888",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "INTERNAL_CASH_TRANSFER_IN",
+     "description": "Internal cash transfer in",
+     "amount": 750.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X188f654d",
+     "settlement_date": null,
+     "trade_date": "2026-10-18T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xe57da2f0",
+     "symbol": {
+      "description": "NVIDIA Corporation",
+      "id": "Xa56be22c",
+      "symbol": "NVDA",
+      "raw_symbol": "NVDA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BBK0R0",
+      "figi_instrument": {
+       "figi_code": "BBG000BBK0R0",
+       "figi_share_class": "BBG001S5TZJ6"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "STOCK_MERGER",
+     "description": "NVDA merger share exchange",
+     "amount": 0.0,
+     "price": 0.0,
+     "units": 4.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X2f8ffdd3",
+     "settlement_date": null,
+     "trade_date": "2026-10-17T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X0cdd7d20",
+     "symbol": {
+      "description": "Fidelity Hereford Street Trust - Fidelity Government Money Market Fund",
+      "id": "Xafa52c0f",
+      "symbol": "SPAXX",
+      "raw_symbol": "SPAXX",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "Xf33cfd2c",
+       "code": "oef",
+       "description": "Open Ended Fund",
+       "is_supported": false
+      },
+      "figi_code": "BBG000B9Y9C7",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y9C7",
+       "figi_share_class": "BBG001S5P6W9"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 3500 SPAXX @ 1.00",
+     "amount": -3500.0,
+     "price": 1.0,
+     "units": 3500.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X6fa3d6e0",
+     "settlement_date": "2026-10-16T17:11:02.054255Z",
+     "trade_date": "2026-10-15T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X97dd980b",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "INTERNAL_CASH_TRANSFER_OUT",
+     "description": "Internal cash transfer out",
+     "amount": -250.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xd6c0dffb",
+     "settlement_date": null,
+     "trade_date": "2026-10-15T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xb2ab8f1f",
+     "symbol": {
+      "description": "Alphabet Inc. Class A Common Stock",
+      "id": "X575e789c",
+      "symbol": "GOOGL",
+      "raw_symbol": "GOOGL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/abc.xyz",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG009S4MT03",
+      "figi_instrument": {
+       "figi_code": "BBG009S4MT03",
+       "figi_share_class": "BBG009S39JY5"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "INTERNAL_ASSET_TRANSFER_IN",
+     "description": "Internal transfer in 1 GOOGL",
+     "amount": 170.0,
+     "price": 170.0,
+     "units": 1.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X31c7e538",
+     "settlement_date": null,
+     "trade_date": "2026-10-14T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X2c1de114",
+     "symbol": {
+      "description": "NVIDIA Corporation",
+      "id": "Xa56be22c",
+      "symbol": "NVDA",
+      "raw_symbol": "NVDA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BBK0R0",
+      "figi_instrument": {
+       "figi_code": "BBG000BBK0R0",
+       "figi_share_class": "BBG001S5TZJ6"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "INTERNAL_ASSET_TRANSFER_OUT",
+     "description": "Internal transfer out 1 NVDA",
+     "amount": -120.0,
+     "price": 120.0,
+     "units": -1.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X40950503",
+     "settlement_date": null,
+     "trade_date": "2026-10-13T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X724a90d9",
+     "symbol": {
+      "description": "Fidelity 500 Index Fund",
+      "id": "X8254617e",
+      "symbol": "FXAIX",
+      "raw_symbol": "FXAIX",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/fidelity.com",
+      "type": {
+       "id": "Xf33cfd2c",
+       "code": "oef",
+       "description": "Open Ended Fund",
+       "is_supported": false
+      },
+      "figi_code": "BBG001P8F023",
+      "figi_instrument": {
+       "figi_code": "BBG001P8F023",
+       "figi_share_class": "BBG001TX1Z13"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 120.5432 FXAIX @ 178.00",
+     "amount": -21456.69,
+     "price": 178.0,
+     "units": 120.5432,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xccae209d",
+     "settlement_date": "2026-10-12T17:11:02.054255Z",
+     "trade_date": "2026-10-11T17:11:02.054255Z",
+     "institution": "sandbox",
+     "option_type": ""
+    }
+   ]
+  },
+  {
+   "account": {
+    "kind": "investment",
+    "id": "X2216ddb7",
+    "connection_id": "X1cf4bf9b",
+    "display_name": "Xb5e69bc2",
+    "status": "open",
+    "masked_account_number": "Xc2db625d",
+    "institution_account_id": "X1678f6e3",
+    "institution_id": "X55562966",
+    "sync_status": {
+     "transactions": {
+      "last_successful_sync": "2026-11-09",
+      "first_transaction_date": "2026-10-12",
+      "initial_sync_completed": true
+     },
+     "orders": "2026-11-10T17:11:02.714413+00:00",
+     "positions": "2026-11-10T17:11:02.714413+00:00",
+     "balances": "2026-11-10T17:11:02.714413+00:00"
+    },
+    "raw_type": "Individual",
+    "cash_or_margin": "unknown",
+    "is_paper": true,
+    "net_value": {
+     "amount": 68851.25,
+     "currency": "USD"
+    }
+   },
+   "balances": [
+    {
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "cash": 25000.0,
+     "buying_power": 50000.0
+    }
+   ],
+   "positions": {
+    "results": [
+     {
+      "instrument": {
+       "kind": "stock",
+       "id": "X56bedb0a",
+       "symbol": "AAPL",
+       "raw_symbol": "AAPL",
+       "description": "Apple Inc.",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG000B9Y5X2",
+        "figi_share_class": "BBG001S5N8V8"
+       }
+      },
+      "units": "5",
+      "price": "180.5",
+      "cost_basis": "175",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "stock",
+       "id": "X3f2e50c0",
+       "symbol": "MSFT",
+       "raw_symbol": "MSFT",
+       "description": "Microsoft Corporation Common Stock",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG000BPHFS9",
+        "figi_share_class": "BBG001S5TD05"
+       }
+      },
+      "units": "10",
+      "price": "410",
+      "cost_basis": "395",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "stock",
+       "id": "X4c743165",
+       "symbol": "TSLA",
+       "raw_symbol": "TSLA",
+       "description": "Tesla, Inc.",
+       "currency": "USD",
+       "exchange": "XNAS",
+       "figi_instrument": {
+        "figi_code": "BBG000N9P426",
+        "figi_share_class": "BBG001SQKGD7"
+       }
+      },
+      "units": "8",
+      "price": "240",
+      "cost_basis": "250",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "etf",
+       "id": "Xdbc65a5e",
+       "symbol": "SPY",
+       "raw_symbol": "SPY",
+       "description": "State Street SPDR S&P 500 ETF Trust",
+       "currency": "USD",
+       "exchange": "ARCX",
+       "figi_instrument": {
+        "figi_code": "BBG000BDTF76",
+        "figi_share_class": "BBG001S72SM3"
+       }
+      },
+      "units": "15",
+      "price": "558.25",
+      "cost_basis": "540",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "crypto",
+       "id": "X42100d1d",
+       "symbol": "BTC",
+       "raw_symbol": "BTC",
+       "description": "Bitcoin",
+       "currency": "USD"
+      },
+      "units": "0.25",
+      "price": "59000",
+      "cost_basis": "62000",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "crypto",
+       "id": "X895f6e94",
+       "symbol": "ETH",
+       "raw_symbol": "ETH",
+       "description": "Ethereum",
+       "currency": "USD"
+      },
+      "units": "2.5",
+      "price": "2650",
+      "cost_basis": "2400",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "crypto",
+       "id": "X32b8a36d",
+       "symbol": "SOL",
+       "raw_symbol": "SOL",
+       "description": "SOL",
+       "currency": "USD"
+      },
+      "units": "40",
+      "price": "142",
+      "cost_basis": "150",
+      "currency": "USD"
+     },
+     {
+      "instrument": {
+       "kind": "crypto",
+       "id": "X8c0753ab",
+       "symbol": "USDC",
+       "raw_symbol": "USDC",
+       "description": "USDC",
+       "currency": "USD"
+      },
+      "units": "1500",
+      "price": "1",
+      "cost_basis": "1",
+      "currency": "USD"
+     }
+    ],
+    "data_freshness": {
+     "as_of": "2026-11-10T17:20:10Z"
+    }
+   },
+   "activities": [
+    {
+     "id": "X871c4f9f",
+     "symbol": {
+      "description": "Apple Inc.",
+      "id": "X56bedb0a",
+      "symbol": "AAPL",
+      "raw_symbol": "AAPL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/apple.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000B9Y5X2",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y5X2",
+       "figi_share_class": "BBG001S5N8V8"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 10 AAPL @ 180.50",
+     "amount": -1805.0,
+     "price": 180.5,
+     "units": 10.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xb46711b5",
+     "settlement_date": "2026-11-09T17:11:02.102483Z",
+     "trade_date": "2026-11-08T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xb96c460a",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "FEE",
+     "description": "Account fee",
+     "amount": -4.95,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xc57f217d",
+     "settlement_date": null,
+     "trade_date": "2026-11-06T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xce9628e5",
+     "symbol": {
+      "description": "Ethereum",
+      "id": "X895f6e94",
+      "symbol": "ETH",
+      "raw_symbol": "ETH",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X5109853e",
+       "code": "WST-CRYPTO",
+       "mic_code": null,
+       "name": "WealthSimple Trade Crypto",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "00:00:00",
+       "close_time": "23:59:59.999999"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X8047d398",
+       "code": "crypto",
+       "description": "Cryptocurrency",
+       "is_supported": true
+      },
+      "figi_code": null,
+      "figi_instrument": null
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "SELL",
+     "description": "Sell 0.5 ETH @ 2600.00",
+     "amount": 1300.0,
+     "price": 2600.0,
+     "units": -0.5,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X03e25fa2",
+     "settlement_date": "2026-11-06T17:11:02.102483Z",
+     "trade_date": "2026-11-06T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X976b3b00",
+     "symbol": {
+      "description": "Tesla, Inc.",
+      "id": "X4c743165",
+      "symbol": "TSLA",
+      "raw_symbol": "TSLA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/tesla.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000N9P426",
+      "figi_instrument": {
+       "figi_code": "BBG000N9P426",
+       "figi_share_class": "BBG001SQKGD7"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "SELL",
+     "description": "Sell 5 TSLA @ 240.00",
+     "amount": 1200.0,
+     "price": 240.0,
+     "units": -5.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X89511e0d",
+     "settlement_date": "2026-11-06T17:11:02.102483Z",
+     "trade_date": "2026-11-05T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xb13d0a6f",
+     "symbol": {
+      "description": "Apple Inc.",
+      "id": "X56bedb0a",
+      "symbol": "AAPL",
+      "raw_symbol": "AAPL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/apple.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000B9Y5X2",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y5X2",
+       "figi_share_class": "BBG001S5N8V8"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "REI",
+     "description": "Reinvest AAPL dividend",
+     "amount": -12.5,
+     "price": 180.5,
+     "units": 0.0692,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xa404030c",
+     "settlement_date": null,
+     "trade_date": "2026-11-01T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X85cd31ff",
+     "symbol": {
+      "description": "Apple Inc.",
+      "id": "X56bedb0a",
+      "symbol": "AAPL",
+      "raw_symbol": "AAPL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/apple.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000B9Y5X2",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y5X2",
+       "figi_share_class": "BBG001S5N8V8"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "DIVIDEND",
+     "description": "AAPL dividend",
+     "amount": 12.5,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X04ac23ab",
+     "settlement_date": null,
+     "trade_date": "2026-10-31T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X446c549c",
+     "symbol": {
+      "description": "Apple Inc.",
+      "id": "X56bedb0a",
+      "symbol": "AAPL",
+      "raw_symbol": "AAPL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/apple.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000B9Y5X2",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y5X2",
+       "figi_share_class": "BBG001S5N8V8"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "TAX",
+     "description": "Foreign tax withheld on AAPL dividend",
+     "amount": -1.88,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X85003cc9",
+     "settlement_date": null,
+     "trade_date": "2026-10-30T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X0611e6a8",
+     "symbol": {
+      "description": "Microsoft Corporation Common Stock",
+      "id": "X3f2e50c0",
+      "symbol": "MSFT",
+      "raw_symbol": "MSFT",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BPHFS9",
+      "figi_instrument": {
+       "figi_code": "BBG000BPHFS9",
+       "figi_share_class": "BBG001S5TD05"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "STOCK_DIVIDEND",
+     "description": "MSFT stock dividend",
+     "amount": 0.0,
+     "price": 0.0,
+     "units": 0.5,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X3bf8d1b2",
+     "settlement_date": null,
+     "trade_date": "2026-10-29T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X79fb5ede",
+     "symbol": {
+      "description": "SOL",
+      "id": "X32b8a36d",
+      "symbol": "SOL",
+      "raw_symbol": "SOL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X20cb11fa",
+       "code": "KRAK",
+       "mic_code": null,
+       "name": "Kraken",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "00:00:00",
+       "close_time": "23:59:59.999999"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X8047d398",
+       "code": "crypto",
+       "description": "Cryptocurrency",
+       "is_supported": true
+      },
+      "figi_code": null,
+      "figi_instrument": null
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 40 SOL @ 150.00",
+     "amount": -6000.0,
+     "price": 150.0,
+     "units": 40.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X1be31ef6",
+     "settlement_date": "2026-10-28T17:11:02.102483Z",
+     "trade_date": "2026-10-28T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xfe3d3862",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "REBATE",
+     "description": "Fee rebate",
+     "amount": 0.5,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X401b642f",
+     "settlement_date": null,
+     "trade_date": "2026-10-28T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X7e158e31",
+     "symbol": {
+      "description": "Microsoft Corporation Common Stock",
+      "id": "X3f2e50c0",
+      "symbol": "MSFT",
+      "raw_symbol": "MSFT",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BPHFS9",
+      "figi_instrument": {
+       "figi_code": "BBG000BPHFS9",
+       "figi_share_class": "BBG001S5TD05"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "RETURN_OF_CAPITAL",
+     "description": "MSFT return of capital",
+     "amount": 8.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X265f8e85",
+     "settlement_date": null,
+     "trade_date": "2026-10-27T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xe1fc51ea",
+     "symbol": {
+      "description": "Tesla, Inc.",
+      "id": "X4c743165",
+      "symbol": "TSLA",
+      "raw_symbol": "TSLA",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/tesla.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000N9P426",
+      "figi_instrument": {
+       "figi_code": "BBG000N9P426",
+       "figi_share_class": "BBG001SQKGD7"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "SPLIT",
+     "description": "TSLA 3:1 forward split",
+     "amount": 0.0,
+     "price": 0.0,
+     "units": 16.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X3e6d2ab8",
+     "settlement_date": null,
+     "trade_date": "2026-10-26T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xbe967f30",
+     "symbol": {
+      "description": "Microsoft Corporation Common Stock",
+      "id": "X3f2e50c0",
+      "symbol": "MSFT",
+      "raw_symbol": "MSFT",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BPHFS9",
+      "figi_instrument": {
+       "figi_code": "BBG000BPHFS9",
+       "figi_share_class": "BBG001S5TD05"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "SPINOFF",
+     "description": "MSFT spinoff distribution",
+     "amount": 0.0,
+     "price": 0.0,
+     "units": 2.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xfdbca76a",
+     "settlement_date": null,
+     "trade_date": "2026-10-25T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X6d7b8a01",
+     "symbol": {
+      "description": "State Street SPDR S&P 500 ETF Trust",
+      "id": "Xdbc65a5e",
+      "symbol": "SPY",
+      "raw_symbol": "SPY",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X2ac27427",
+       "code": "ARCA",
+       "mic_code": "ARCX",
+       "name": "NYSE Arca",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "",
+      "type": {
+       "id": "X83321a45",
+       "code": "et",
+       "description": "ETF",
+       "is_supported": true
+      },
+      "figi_code": "BBG000BDTF76",
+      "figi_instrument": {
+       "figi_code": "BBG000BDTF76",
+       "figi_share_class": "BBG001S72SM3"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 15 SPY @ 540.00",
+     "amount": -8100.0,
+     "price": 540.0,
+     "units": 15.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X4a2abfb4",
+     "settlement_date": "2026-10-25T17:11:02.102483Z",
+     "trade_date": "2026-10-24T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X228d3f5a",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "ADJUSTMENT",
+     "description": "Balance adjustment",
+     "amount": -1.2,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xff7e766e",
+     "settlement_date": null,
+     "trade_date": "2026-10-23T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X57c78616",
+     "symbol": {
+      "description": "Apple Inc.",
+      "id": "X56bedb0a",
+      "symbol": "AAPL",
+      "raw_symbol": "AAPL",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X357ee4fb",
+       "code": "NASDAQ",
+       "mic_code": "XNAS",
+       "name": "NASDAQ",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "09:30:00",
+       "close_time": "16:00:00"
+      },
+      "logo_url": "https://api.twelvedata.com/logo/apple.com",
+      "type": {
+       "id": "X6eabe6be",
+       "code": "cs",
+       "description": "Common Stock",
+       "is_supported": true
+      },
+      "figi_code": "BBG000B9Y5X2",
+      "figi_instrument": {
+       "figi_code": "BBG000B9Y5X2",
+       "figi_share_class": "BBG001S5N8V8"
+      }
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "REVERSE_SPLIT",
+     "description": "AAPL 1-for-2 reverse split",
+     "amount": 0.0,
+     "price": 0.0,
+     "units": -2.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xf15fc1a7",
+     "settlement_date": null,
+     "trade_date": "2026-10-22T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X45886998",
+     "symbol": {
+      "description": "USDC",
+      "id": "X8c0753ab",
+      "symbol": "USDC",
+      "raw_symbol": "USDC",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X1787f8c5",
+       "code": "BINANCE",
+       "mic_code": null,
+       "name": "Binance",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "00:00:00",
+       "close_time": "23:59:59.999999"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X8047d398",
+       "code": "crypto",
+       "description": "Cryptocurrency",
+       "is_supported": true
+      },
+      "figi_code": null,
+      "figi_instrument": null
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 1500 USDC @ 1.00",
+     "amount": -1500.0,
+     "price": 1.0,
+     "units": 1500.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "Xc4092f9a",
+     "settlement_date": "2026-10-20T17:11:02.102483Z",
+     "trade_date": "2026-10-20T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xaab6ba75",
+     "symbol": {
+      "description": "Ethereum",
+      "id": "X895f6e94",
+      "symbol": "ETH",
+      "raw_symbol": "ETH",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X5109853e",
+       "code": "WST-CRYPTO",
+       "mic_code": null,
+       "name": "WealthSimple Trade Crypto",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "00:00:00",
+       "close_time": "23:59:59.999999"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X8047d398",
+       "code": "crypto",
+       "description": "Cryptocurrency",
+       "is_supported": true
+      },
+      "figi_code": null,
+      "figi_instrument": null
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 3 ETH @ 2400.00",
+     "amount": -7200.0,
+     "price": 2400.0,
+     "units": 3.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X1379aa1a",
+     "settlement_date": "2026-10-19T17:11:02.102483Z",
+     "trade_date": "2026-10-19T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "Xff5e571b",
+     "symbol": null,
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "CONTRIBUTION",
+     "description": "ACH deposit",
+     "amount": 5000.0,
+     "price": 0.0,
+     "units": 0.0,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X274f15f4",
+     "settlement_date": null,
+     "trade_date": "2026-10-16T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    },
+    {
+     "id": "X7007ee4e",
+     "symbol": {
+      "description": "Bitcoin",
+      "id": "X42100d1d",
+      "symbol": "BTC",
+      "raw_symbol": "BTC",
+      "currency": {
+       "code": "USD",
+       "name": "US Dollar",
+       "id": "X6b90aa74"
+      },
+      "exchange": {
+       "id": "X5109853e",
+       "code": "WST-CRYPTO",
+       "mic_code": null,
+       "name": "WealthSimple Trade Crypto",
+       "suffix": null,
+       "timezone": "America/New_York",
+       "start_time": "00:00:00",
+       "close_time": "23:59:59.999999"
+      },
+      "logo_url": null,
+      "type": {
+       "id": "X8047d398",
+       "code": "crypto",
+       "description": "Cryptocurrency",
+       "is_supported": true
+      },
+      "figi_code": null,
+      "figi_instrument": null
+     },
+     "currency_universal_symbol": null,
+     "option_symbol": null,
+     "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "id": "X6b90aa74"
+     },
+     "type": "BUY",
+     "description": "Buy 0.25 BTC @ 62000.00",
+     "amount": -15500.0,
+     "price": 62000.0,
+     "units": 0.25,
+     "fee": 0.0,
+     "fx_rate": null,
+     "external_reference_id": "X593702a4",
+     "settlement_date": "2026-10-12T17:11:02.102483Z",
+     "trade_date": "2026-10-12T17:11:02.102483Z",
+     "institution": "sandbox",
+     "option_type": ""
+    }
+   ]
+  }
+ ],
+ "other_accounts": [],
+ "fetch_stats": {
+  "calls": 9,
+  "retries": 0,
+  "rate_headers": {
+   "X-RateLimit-Limit": "250",
+   "X-RateLimit-Remaining": "241",
+   "X-RateLimit-Reset": "58",
+   "X-RateLimit-Account-Limit": "10",
+   "X-RateLimit-Account-Remaining": "7",
+   "X-RateLimit-Account-Reset": "60"
+  }
+ }
+}

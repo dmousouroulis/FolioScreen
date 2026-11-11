@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node (only needed for tools/validate_pbip.py)
+tools/node/node_modules/
+
+# Never commit private data or state (FolioScreen keeps these outside the repo, this is a second guard)
+private/
+*.env
+.env*
+*transactions*.csv
+known_good_*.json
+demo_inputs_*.json
+deployment_*.json
+last_run.json
+last_success.json
+history.jsonl
+microsoft_auth_record.json
+build/
+
+# Power BI Desktop local files
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# macOS
+.DS_Store
+pbip/
