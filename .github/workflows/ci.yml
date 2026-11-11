@@ -14,10 +14,11 @@ jobs:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
-    env:
-      FOLIO_HOME: ${{ runner.temp }}/folio-home
     steps:
       - uses: actions/checkout@v4
+      - name: Keep FolioScreen's state in a temporary folder
+        shell: bash
+        run: echo "FOLIO_HOME=$RUNNER_TEMP/folio-home" >> "$GITHUB_ENV"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
