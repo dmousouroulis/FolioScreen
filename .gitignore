@@ -7,6 +7,7 @@ __pycache__/
 
 # Node (only needed for tools/validate_pbip.py)
 tools/node/node_modules/
+tools/node/package-lock.json
 
 # Never commit private data or state (FolioScreen keeps these outside the repo, this is a second guard)
 private/
