@@ -15,21 +15,22 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Keep FolioScreen's state in a temporary folder
         shell: bash
         run: echo "FOLIO_HOME=$RUNNER_TEMP/folio-home" >> "$GITHUB_ENV"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: "24"
+          package-manager-cache: false
       - name: Install
         shell: bash
         run: |
           pip install -r requirements-dev.txt
-          cd tools/node && npm install --no-audit --no-fund
+          cd tools/node && npm install --no-audit --no-fund --no-package-lock
       - name: Tests (offline)
         run: python -m pytest -q
       - name: Build the demo report and model
